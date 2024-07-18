@@ -42,7 +42,7 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 - 分支文件：https://github.com/hunshcn/project/blob/master/filename
 
-- commit文件://github.com/hunshcn/project/blob/1111111111111111111111111111/filename
+- commit文件：https://github.com/hunshcn/project/blob/1111111111111111111111111111/filename
 
 - gist文件：https://gist.githubusercontent.com/cielpy/351557e6e465c12986419ac5a4dd2568/raw/cmd.py
 
