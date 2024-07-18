@@ -30,6 +30,12 @@ const exp3 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/(?:info|git-).*$/i
 const exp4 = /^(?:https?:\/\/)?raw\.(?:githubusercontent|github)\.com\/.+?\/.+?\/.+?\/.+$/i
 const exp5 = /^(?:https?:\/\/)?gist\.(?:githubusercontent|github)\.com\/.+?\/.+?\/.+$/i
 const exp6 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/tags.*$/i
+const exp7 = /^(?:https?:\/\/)?api\.github\.com\/.*$/i
+const exp8 = /^(?:https?:\/\/)?git\.io\/.*$/i
+const exp9 = /^(?:https?:\/\/)?avatars\.githubusercontent\.com\/.*$/i
+const exp10 = /^(?:https?:\/\/)?user-images\.githubusercontent\.com\/.*$/i
+
+
 
 /**
  * @param {any} body
@@ -62,7 +68,7 @@ addEventListener('fetch', e => {
 
 
 function checkUrl(u) {
-    for (let i of [exp1, exp2, exp3, exp4, exp5, exp6]) {
+    for (let i of [exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10]) {
         if (u.search(i) === 0) {
             return true
         }
